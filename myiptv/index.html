@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta http-equiv='Cache-control' content='no-cache'>
+		<title>myiptv</title>
+		
+		<!-- TODO : Common API -->
+		<script type="text/javascript" language="javascript" src="$MANAGER_WIDGET/Common/API/Widget.js"></script>
+		<script type="text/javascript" language="javascript" src="$MANAGER_WIDGET/Common/API/TVKeyValue.js"></script>
+		<script type="text/javascript" language="javascript" src="$MANAGER_WIDGET/Common/jquery.js"></script>
+		<script type='text/javascript' language='javascript' src='$MANAGER_WIDGET/Common/API/Plugin.js'></script>
+		<!--
+		<script type="text/javascript" src="$CAPH/1.0.0/caph-level1-unified.min.js"></script>
+		-->
+		<script type="text/javascript" language="javascript" src="$MANAGER_WIDGET/Common/webapi/1.0/webapis.js"></script>
+		
+		<!-- TODO : Javascript code -->
+		<script type="text/javascript" src='http://YOUR_WEB_SERVER/channels.js?a1'></script>
+		<script language="javascript" type="text/javascript" src="app/javascript/samsungplayer.js?a17"></script>
+		<script language="javascript" type="text/javascript" src="app/javascript/Main.js?a7"></script>
+		
+		<!-- TODO : Style sheets code -->
+		<link rel="stylesheet" href="app/stylesheets/Main.css?a2" type="text/css">
+
+		
+		<!-- TODO: Plugins -->			
+		<object id="pluginObjectTVMW" border=0 classid="clsid:SAMSUNG-INFOLINK-TVMW" style="width: 0; height: 0; opacity: 0;" /></object>
+		<object id="pluginObjectNNavi" border=0 classid="clsid:SAMSUNG-INFOLINK-NNAVI" style="width: 0; height: 0; opacity: 0;" /></object>
+		
+	</head>
+
+	<body onload="Main.onLoad();" onunload="Main.onUnload();">
+		<!-- Dummy anchor as focus for key events -->
+		<a href="javascript:void(0);" id="anchor" onkeydown="Main.keyDown();"></a>
+		
+		<!-- TODO: your code here -->
+		<div id='channel-name'></div>
+		<div id='loading'>LOADING...</div>
+		<div id='player-container'></div>
+	</body>
+</html>
