@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rsp stat="ok">
+  <list>
+   <widget id="MyIPTV">
+      <title>MyIPTV app by Asenov</title>
+      <compression size="555319" type="zip"/>
+      <description>Allows to play hls streams</description>
+      <download>http://192.168.0.16/myiptv.zip</download>
+    </widget>
+   <!--  
+    <widget id="VolumeontrolCustom">
+      <title>VolumeontrolCustom</title>
+      <compression size="3383543" type="zip"/>
+      <description>Samsung TV native volume control</description>
+      <download>http://192.168.0.16/CustomVolumeSlider.zip</download>
+    </widget>
+    -->
+  </list>
+</rsp>
